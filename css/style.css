@@ -1,0 +1,23 @@
+/*RESET é estilo base*/
+/*'0' é o seletor universal que aplica o estilo a TODOS os elementos da página*/
+*{
+    /*Begin*/
+    margin: 0;
+    /*remove margens padrao que os navegadores adicional*/
+    padding: 0%;
+    /*remove espaçamentos internos padrão*/
+    box-sizing: border-box;
+    /*faz com que o padding e border sejam incluidos na largura e altura total do elemento*/
+    background-color: aqua;
+    background-image: url('https://thumbs.dreamstime.com/z/fundo-dos-desenhos-animados-do-laborat%C3%B3rio-qu%C3%ADmico-79995620.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+}/*End*/
+body{
+    /*Fontes: segoe UI é a primeira opçao se nao tiver, vai tentando as próximas*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
