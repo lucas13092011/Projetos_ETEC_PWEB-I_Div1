@@ -8,16 +8,41 @@
     /*remove espaçamentos internos padrão*/
     box-sizing: border-box;
     /*faz com que o padding e border sejam incluidos na largura e altura total do elemento*/
-    background-color: aqua;
-    background-image: url('https://thumbs.dreamstime.com/z/fundo-dos-desenhos-animados-do-laborat%C3%B3rio-qu%C3%ADmico-79995620.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-attachment: fixed;
+   
 }/*End*/
 body{
     /*Fontes: segoe UI é a primeira opçao se nao tiver, vai tentando as próximas*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    /*cor de texto 'cinza escuro'
+    gradiente de fundo: 135deg é a direçao, de roxo claro p roxo escuro*/
+    min-width: 100vh;/*vh = viewport height, minimo de 100% da altura da tela*/
+    background:linear-gradient(135deg,#ffffff 0%,#ffffff 100%);
 }
+/*===Header (Cabeçalho)===*/
+header{
+    background-color: rgba(255, 0, 0, 1.00);
+    /*Branco com 0.95 = 95% de opacidade*/
+    padding: 1rem 5%; /* rem = 1.6px( tamanho  padrao),5% largura*/
+    display: flex;/*ativa o flexbox para layout flexivel*/
+    align-items: center;
+    justify-content: space-between;/*espaço entre os itens( logo de um lado e menu do outro)*/
+    flex-wrap: wrap;/*permite quebra de linha em tela pequena*/
+    gap: 1rem;/*espaçamento entre os itens flexiveis*/
+    box-shadow: 0 2px 20px rgba(0, 0,0,1.0);/*sombra: eixo x eixo y desfoque na cor*/
+    position:sticky;/*grudar no topo ao rolar*/
+    top: 0%;/*distancia do topo ao grudar*/
+    z-index: 1000;/*garante que fique acima dos outros elementos*/
+}
+header img{
+    height: 100px;/* fixa a altura da img*/
+    width: auto;/*ajusta a largura automaticamente de acordo com a altura (mantem proporcional)*/
+    transition:0.3s ease;
+}
+header img:hover{
+    /*hover = quando passa o mouse por um elemento*/
+    transform: scale(1.05);
+
+}
+    
